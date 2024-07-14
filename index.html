@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body class="bg-black">
+        <div class="side-nav-menu d-flex">
+            <div class="links-side mt-3 d-flex flex-column justify-content-between min-vh-100 p-4">
+                <div class="links">
+                    <ul class="lh-lg">
+                        <li><a href="#" onclick="displaySearch()">Search</a></li>
+                        <li><a href="#" onclick="getCategories()">Categories</a></li>
+                        <li><a href="#" onclick="getCountry()">Area</a></li>
+                        <li><a href="#" onclick="getIngredients()">Ingredients</a></li>
+                        <li><a href="#" onclick="inputsValidation()">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="social-media text-white">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="/"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <footer>
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </footer>
+                </div>
+            </div>
+            <div class="icons-side mt-3 d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+                <img src="images/logo.png" href class="w-100" alt="">
+                <div class="toggle-icon">
+                    <i class="fa-solid fa-xmark fs-3" id="closeIcon"></i>
+                    <i class="fa-solid fa-bars fs-3" id="openIcon"></i>   
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+
+    <main>
+        <section class="container">
+            <div class="food-search">
+                <div class="row py-4 d-none" id="searchInputs">
+                    <div class="col-md-6">
+                        <input class="form-control bg-transparent text-white" type="text" placeholder="Search By Name" id="searchName">
+                    </div>
+                    <div class="col-md-6">
+                        <input maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter" id="searchLetter">
+                    </div>
+                </div>
+                <div class="row g-3 search-results">
+                </div>
+            </div>
+            <div class="row py-4 g-4 food-items">
+                <!-- <div class="col-md-3">
+                    <div class="food-item">
+                        <img src="images/58oia61564916529.jpg" class="w-100" alt="">
+                        <div class="food-description">
+                            <p class="text-black text-center fs-3 fw-medium">Corba</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row food-item">
+                <!-- <div class="col-md-3">
+                    <div class="ingredient text-white">
+                        <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+                        <h3>Ingredient</h3>
+                    </div>
+                </div> -->
+            </div>
+            <div class="contact-inputs container">
+            </div>
+            
+        </section>
+    </main>
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+/*Start Main Styles*/
+ul { list-style-type: none; margin: 0; padding: 0;}
+a {text-decoration: none; color: white;}
+/*End Main Styles*/
+
+/*Start Side-Bar Styles*/
+.side-nav-menu {
+    width: 300px;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    min-height: 105vh;
+    left: -231.966px;
+}
+.side-nav-menu .icons-side{
+    width: 25%;
+}
+.side-nav-menu .links-side .links ul li {
+    position: relative;
+    top: 100px;
+}
+.side-nav-menu .icons-side .toggle-icon #openIcon {
+    cursor: pointer;
+}
+.side-nav-menu .icons-side .toggle-icon #closeIcon {
+    cursor: pointer;
+}
+/*End Side-Bar Styles*/
+
+
+/*Start Food Section Styles*/
+main .container .food-item {
+    position: relative;
+    overflow: hidden;
+}
+main .container .food-item img{
+    border-radius: 10px;
+}
+main .container .food-item img:hover {
+    cursor: pointer;
+}
+main .container .food-item .food-description{
+    background-color: #ffffffb5;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+    
+}main .container .food-item p#displayIngredientsParagraph {
+    height: 100px;
+}
+main .container .food-item:hover .food-description{
+    transform: translateY(0%);
+    cursor: pointer;
+}
+main .container .food-item:hover .country{
+    cursor: pointer;
+}
+main .container .food-item p{
+    margin: 0;
+    padding-top: 40%;
+}
+main .container .food-search input::placeholder {
+    color: white;
+}
+
+/*End Food Section Styles*/
